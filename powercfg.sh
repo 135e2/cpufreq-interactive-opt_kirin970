@@ -47,8 +47,8 @@ function unify_environment()
 function runonce_custom()
 {
 	# avoid permission problem, do not set 0444
-	set_value 2-3 /dev/cpuset/background/cpus
-	set_value 0-3 /dev/cpuset/system-background/cpus
+	set_value 0-3 /dev/cpuset/background/cpus
+	set_value 2-3 /dev/cpuset/system-background/cpus
 	set_value 0-3,4-7 /dev/cpuset/foreground/cpus
 	set_value 0-3,4-7 /dev/cpuset/top-app/cpus
 
